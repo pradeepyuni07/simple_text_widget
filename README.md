@@ -1,39 +1,39 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# simple_text_widget
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A simple Flutter package for a customizable Text widget.  
+This package allows you to quickly display text with custom font size and color.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- Simple usage
+- Customizable font size
+- Customizable text color
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+import 'package:flutter/material.dart';
+import 'package:simple_text_widget/simple_text_widget.dart';
 
-```dart
-const like = 'sample';
-```
+void main() {
+  runApp(const MyApp());
+}
 
-## Additional information
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('SimpleText Example')),
+        body: Center(
+          child: SimpleText(
+            text: "Hello from Package!",
+            fontSize: 24,
+            color: Colors.blue,
+          ),
+        ),
+      ),
+    );
+  }
+}
