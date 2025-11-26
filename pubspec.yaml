@@ -1,0 +1,23 @@
+
+---
+
+# **Step 5: Update `pubspec.yaml`**
+
+name: simple_text_widget
+description: A simple custom Text widget package
+version: 0.0.1
+homepage: https://github.com/pradeepyuni07/simple_text_widget
+repository: https://github.com/pradeepyuni07/simple_text_widget
+documentation: https://github.com/pradeepyuni07/simple_text_widget#readme
+environment:
+  sdk: ">=2.20.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+publish_to: 'https://pub.dev'
